@@ -3,13 +3,13 @@ import Image from "next/image"
 import { ArrowUpRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
-export function SiteHeader() {
+export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Recall-Summarize-Anything-Forget-Nothing-01-13-2025_01_56_PM-GDqpbPAHbgGNIUMmunEa65XTVStr6E.png"
+            src="/recall-logo.svg"
             alt="Recall logo"
             width={120}
             height={32}
