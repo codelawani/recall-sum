@@ -2,11 +2,20 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { Montserrat } from '@next/font/google';
+import { MobileNav } from "./mobile-nav"
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+        <header className={`sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ${montserrat.className}`}>
+
+      <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/recall-logo.svg"
@@ -16,7 +25,7 @@ export default function Header() {
             className="h-8 w-auto"
           />
         </Link>
-        <nav className="flex flex-1 items-center justify-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center justify-center space-x-6 text-sm font-medium">
           <Link
             href="/"
             className="transition-colors hover:text-foreground/80 text-foreground"
@@ -49,7 +58,7 @@ export default function Header() {
             <ArrowUpRight className="ml-1 h-4 w-4" />
           </Link>
         </nav>
-        <div className="flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" asChild>
             <Link href="/login">
               Log in
@@ -61,6 +70,7 @@ export default function Header() {
             </Link>
           </Button>
         </div>
+        <MobileNav />
       </div>
     </header>
   )
