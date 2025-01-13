@@ -69,12 +69,26 @@ export function MobileNav() {
           </Link>
         </nav>
         <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center space-y-4 px-6">
-          <Button variant="outline" className="w-full max-w-[280px] text-lg h-12" asChild>
+          <Button
+            variant="outline"
+            className="w-full max-w-[280px] text-lg h-12 border-[#0066FF]/30 bg-[#020817] hover:bg-[#020817]/90 hover:border-[#0066FF]/50 transition-all"
+            style={{
+              boxShadow: '0 0 20px rgba(0, 102, 255, 0.2)',
+            }}
+            asChild
+          >
             <Link href="/login" onClick={() => setOpen(false)}>
               Log in
             </Link>
           </Button>
-          <Button variant="outline" className="w-full max-w-[280px] text-lg h-12" asChild>
+          <Button
+            variant="outline"
+            className="w-full max-w-[280px] text-lg h-12 border-[#0066FF]/30 bg-[#020817] hover:bg-[#020817]/90 hover:border-[#0066FF]/50 transition-all"
+            style={{
+              boxShadow: '0 0 20px rgba(0, 102, 255, 0.2)',
+            }}
+            asChild
+          >
             <Link href="/signup" onClick={() => setOpen(false)}>
               Sign up
             </Link>
