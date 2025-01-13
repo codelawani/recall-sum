@@ -17,7 +17,11 @@ body {
 }
 
 .sum-card {
-  max-width: 600px;
+  flex-basis: 66.6667%;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  max-width: 66.6667%;
+  margin-inline: auto;
 }
 
 @layer base {

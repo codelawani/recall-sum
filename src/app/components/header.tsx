@@ -2,14 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Montserrat } from '@next/font/google';
 import { MobileNav } from "./mobile-nav"
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  display: 'swap',
-});
+import { montserrat } from "../fonts"
 
 export default function Header() {
   return (
