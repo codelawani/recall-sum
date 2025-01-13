@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { useInView, useAnimation } from 'framer-motion'
 
 export default function AnimatedHero() {
   const ref = useRef(null)
@@ -19,12 +19,12 @@ export default function AnimatedHero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-[40vh] flex flex-col items-center justify-center px-4 py-24"
+      className="relative min-h-[10vh] flex flex-col items-center justify-center px-4 py-12"
     >
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-white mb-12">
-        YouTube Summarizer
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
+        YouTube Video Summarizer
       </h1>
-      <motion.div
+      {/* <motion.div
         initial={{ scaleX: 0 }}
         animate={controls}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -32,10 +32,10 @@ export default function AnimatedHero() {
         style={{
           boxShadow: '0 0 20px 1px rgba(59, 130, 246, 0.5)',
         }}
-      />
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-white/90">
+      /> */}
+      {/* <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-white/90">
         Summarize Anything
-      </h2>
+      </h2> */}
     </section>
   )
 }

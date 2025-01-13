@@ -7,8 +7,13 @@ export default function Samples() {
   const [markdownContent, setMarkdownContent] = useState<string | null>(null);
 
   const handleButtonClick = async () => {
-const response = await fetch("db/How to Ikigai  Tim Tamashiro  TEDxYYC.md");    const text = await response.text();
-    setMarkdownContent(text);
+    if (markdownContent) {
+      setMarkdownContent(null); // Clear the content if already set
+    } else {
+      const response = await fetch("/db/How to Ikigai  Tim Tamashiro  TEDxYYC.md");
+      const text = await response.text();
+      setMarkdownContent(text);
+    }
   };
 const isTimestampLink = (href: string | undefined) => {
     return href?.includes("youtube.com") && href.includes("t=");
@@ -16,7 +21,7 @@ const isTimestampLink = (href: string | undefined) => {
 
   return (
     <div>
-      <ul>
+      <ul className="text-center">
         <button onClick={handleButtonClick}>
           <p className="text-yellow-500 mt-2">How to Ikigai | Tim Tamashiro | TEDxYYC</p>
         </button>
