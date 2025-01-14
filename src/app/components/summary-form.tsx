@@ -12,7 +12,7 @@ export default function SummaryForm() {
   };
 
   const handleButtonClick = () => {
-    alert(`Input value: ${inputValue}`);
+    alert(`Sign up for 10 free summaries`);
   };
 
   return (
@@ -24,7 +24,7 @@ export default function SummaryForm() {
           onChange={handleInputChange}
           placeholder="Enter a YouTube Link"
           className={
-            "flex w-full h-12 rounded-md border border-[#0066FF]/20 bg-[#020817]/80 px-6 text-lg text-white placeholder:text-white/90 " +
+            "flex w-full h-12 rounded-md border border-[#0066FF]/20 bg-[#020817]/80 px-6 text-sm text-white placeholder:text-white/90 " +
             "focus:outline-none focus:ring-0 focus:border-[#0066FF]/40 " +
             "transition-all duration-200 " +
             "shadow-[0_0_20px_rgba(0,102,255,0.1)]"
@@ -32,6 +32,7 @@ export default function SummaryForm() {
         />
         <Button
           type="submit"
+          variant={"unstyled"}
           onClick={handleButtonClick}
           className={
             "h-12 ml-2 rounded-md border border-[#0066FF]/20 bg-[#020817]/90 px-8 text-lg font-medium text-white " +
