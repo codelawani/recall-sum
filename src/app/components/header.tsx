@@ -10,7 +10,7 @@ export default function Header() {
     <header
       className={`flex justify-center sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ${montserrat.className}`}
     >
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6 xl:w-4/5">
+      <div className="container flex h-16 items-center justify-between w-4/5">
         <Link href="/" className="flex items-center">
           <Image
             src="/recall-logo.svg"
@@ -19,7 +19,7 @@ export default function Header() {
             height={50}
           />
         </Link>
-        <nav className="hidden md:flex items-center justify-center space-x-1 font-medium">
+        <nav className="hidden lg:flex items-center justify-center space-x-1 font-medium">
           <Link
             href="https://www.getrecall.ai/"
             target="_blank"
@@ -57,7 +57,7 @@ export default function Header() {
             <ArrowUpRight className="ml-1 h-4 w-4" />
           </Link>
         </nav>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Button
             variant="ghost"
             asChild

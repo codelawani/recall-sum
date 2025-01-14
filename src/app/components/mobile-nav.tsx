@@ -1,19 +1,24 @@
-'use client'
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { X, Menu, ArrowUpRight } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet"
-import { useState } from "react"
+import Link from "next/link";
+import Image from "next/image";
+import { X, Menu, ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { useState } from "react";
 
 export function MobileNav() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="md:hidden">
+        <Button variant="ghost" className="lg:hidden">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Toggle menu</span>
         </Button>
@@ -73,7 +78,7 @@ export function MobileNav() {
             variant="outline"
             className="w-full max-w-[280px] text-lg h-12 border-[#0066FF]/30 bg-[#020817] hover:bg-[#020817]/90 hover:border-[#0066FF]/50 transition-all"
             style={{
-              boxShadow: '0 0 20px rgba(0, 102, 255, 0.2)',
+              boxShadow: "0 0 20px rgba(0, 102, 255, 0.2)",
             }}
             asChild
           >
@@ -85,7 +90,7 @@ export function MobileNav() {
             variant="outline"
             className="w-full max-w-[280px] text-lg h-12 border-[#0066FF]/30 bg-[#020817] hover:bg-[#020817]/90 hover:border-[#0066FF]/50 transition-all"
             style={{
-              boxShadow: '0 0 20px rgba(0, 102, 255, 0.2)',
+              boxShadow: "0 0 20px rgba(0, 102, 255, 0.2)",
             }}
             asChild
           >
@@ -96,6 +101,5 @@ export function MobileNav() {
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }
-
