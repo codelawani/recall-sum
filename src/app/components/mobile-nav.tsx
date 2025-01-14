@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { X, Menu, ArrowUpRight } from "lucide-react";
+import { Menu, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState } from "react";
@@ -24,6 +25,7 @@ export function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent side="top" className="h-screen pt-6 bg-[#020817]">
+        <SheetTitle></SheetTitle>
         <SheetHeader className="mb-8">
           <div className="flex justify-center">
             <Image
