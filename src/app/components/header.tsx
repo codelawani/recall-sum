@@ -19,39 +19,39 @@ export default function Header() {
             height={50}
           />
         </Link>
-        <nav className="hidden lg:flex items-center justify-center space-x-1 font-medium">
+        <nav className="hidden lg:flex items-center justify-center font-medium">
           <Link
             href="https://www.getrecall.ai/"
             target="_blank"
-            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-2 text-foreground"
+            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-1 text-foreground"
           >
             Home
           </Link>
           <Link
             href="https://www.getrecall.ai/blog"
             target="_blank"
-            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-2 text-foreground"
+            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-1 text-foreground"
           >
             Blog
           </Link>
           <Link
             href="https://www.getrecall.ai/pricing"
             target="_blank"
-            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-2 text-foreground"
+            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-1 text-foreground"
           >
             Pricing
           </Link>
           <Link
             href="https://www.getrecall.ai/summaries"
             target="_blank"
-            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-2 text-foreground"
+            className="transition-colors hover:bg-secondary rounded-2xl px-4 py-1 text-foreground"
           >
             Summaries
           </Link>
           <Link
             href="https://docs.getrecall.ai"
             target="_blank"
-            className="inline-flex items-center transition-colors hover:bg-secondary rounded-2xl px-4 py-2 text-foreground"
+            className="inline-flex items-center transition-colors hover:bg-secondary rounded-2xl px-4 py-1 text-foreground"
           >
             Docs
             <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -70,7 +70,7 @@ export default function Header() {
           <Button
             variant="outline"
             asChild
-            className="rounded-2xl border-2 border-white hover:bg-blue-700 hover:border-blue-700"
+            className="rounded-2xl border-2 border-white hover:bg-accent hover:border-accent"
           >
             <Link href="https://app.getrecall.ai/signup" target="_blank">
               Sign up
