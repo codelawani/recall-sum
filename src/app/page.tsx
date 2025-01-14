@@ -6,12 +6,12 @@ import SummaryForm from "./components/summary-form";
 export default function Home() {
   return (
     <div>
-    <Header/>
-    <div className="mt-4 flex flex-col items-center">
-      <AnimatedHero/>
-      <SummaryForm />
-      <Samples />
-    </div>
+      <Header />
+      <div className="mt-4 flex flex-col items-center">
+        <AnimatedHero />
+        <SummaryForm />
+        <Samples />
+      </div>
     </div>
   );
 }

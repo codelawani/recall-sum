@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import { useInView, useAnimation } from 'framer-motion'
+import { useEffect, useRef } from "react";
+import { useInView, useAnimation } from "framer-motion";
 
 export default function AnimatedHero() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: false })
-  const controls = useAnimation()
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      controls.start({ scaleX: 1 })
+      controls.start({ scaleX: 1 });
     } else {
-      controls.start({ scaleX: 0 })
+      controls.start({ scaleX: 0 });
     }
-  }, [isInView, controls])
-// bg-[#020817]
+  }, [isInView, controls]);
+  // bg-[#020817]
   return (
     <section
       ref={ref}
@@ -37,6 +37,5 @@ export default function AnimatedHero() {
         Summarize Anything
       </h2> */}
     </section>
-  )
+  );
 }
-
