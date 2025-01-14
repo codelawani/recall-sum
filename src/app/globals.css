@@ -13,6 +13,7 @@ body {
   cursor: pointer;
   margin-inline: auto;
   margin-top: 15px;
+  object-fit: cover;
   border: 2px solid #e2e8f0;
 }
 
